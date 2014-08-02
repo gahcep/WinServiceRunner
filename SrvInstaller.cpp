@@ -213,35 +213,35 @@ extern "C" {
 		{
 #ifdef UNICODE
 			unique_sch scHandle(CreateServiceW(
-				scManager.get(),				// A handle to the service control manager database
-				srvName,						// The name of the service to install
-				srvFullName,					// The display name to identify the service
-				SERVICE_ALL_ACCESS,				// The access to the service
-				SERVICE_WIN32_OWN_PROCESS,		// The service type: service that runs in its own process
-				SERVICE_AUTO_START,				// The service start options
-				SERVICE_ERROR_NORMAL,			// The severity of the error: logs the error and continues the startup
-				srvPath,						// The fully qualified path to the service binary file
-				0,								// No load ordering group
-				0,								// No tag value changing
-				0,								// No service dependencies supported
-				L"NT AUTHORITY\\LocalService", 	// Give a service a broader permissions
-				0								// No password is used
+				scManager.get(),                // A handle to the service control manager database
+				srvName,                        // The name of the service to install
+				srvFullName,                    // The display name to identify the service
+				SERVICE_ALL_ACCESS,             // The access to the service
+				SERVICE_WIN32_OWN_PROCESS,      // The service type: service that runs in its own process
+				SERVICE_AUTO_START,             // The service start options
+				SERVICE_ERROR_NORMAL,           // The severity of the error: logs the error and continues the startup
+				srvPath,                        // The fully qualified path to the service binary file
+				0,                              // No load ordering group
+				0,                              // No tag value changing
+				0,                              // No service dependencies supported
+				L"NT AUTHORITY\\LocalService",  // Give a service a broader permissions
+				0                               // No password is used
 				));
 #else
 			unique_sch scHandle(CreateServiceA(
-				scManager.get(),				// A handle to the service control manager database
-				srvName,						// The name of the service to install
-				srvFullName,					// The display name to identify the service
-				SERVICE_ALL_ACCESS,				// The access to the service
-				SERVICE_WIN32_OWN_PROCESS,		// The service type: service that runs in its own process
-				SERVICE_AUTO_START,				// The service start options
-				SERVICE_ERROR_NORMAL,			// The severity of the error: logs the error and continues the startup
-				srvPath,						// The fully qualified path to the service binary file
-				0,								// No load ordering group
-				0,								// No tag value changing
-				0,								// No service dependencies supported
-				"NT AUTHORITY\\LocalService", 	// Give a service a broader permissions
-				0								// No password is used
+				scManager.get(),                // A handle to the service control manager database
+				srvName,                        // The name of the service to install
+				srvFullName,                    // The display name to identify the service
+				SERVICE_ALL_ACCESS,             // The access to the service
+				SERVICE_WIN32_OWN_PROCESS,      // The service type: service that runs in its own process
+				SERVICE_AUTO_START,             // The service start options
+				SERVICE_ERROR_NORMAL,           // The severity of the error: logs the error and continues the startup
+				srvPath,                        // The fully qualified path to the service binary file
+				0,                              // No load ordering group
+				0,                              // No tag value changing
+				0,                              // No service dependencies supported
+				"NT AUTHORITY\\LocalService",   // Give a service a broader permissions
+				0                               // No password is used
 				));
 #endif
 			if (!scHandle.get())
