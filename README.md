@@ -1,7 +1,7 @@
 WinServiceRunner
 ================
 
-**WinServiceRunner** is a C++ library built in Microsoft Visual Studio 2013 the main goal of which is to work with existing or prepared (*.exe file) Windows Services. The project generates **DLL** which can be used on Windows platform.
+**WinServiceRunner** is a C++ library built in Microsoft Visual Studio 2013 the main goal of which is to work with existing or prepared (**exe** file) Windows Services. The project generates **DLL** which can be used on Windows platform.
 
 What the library **can do**:
 
