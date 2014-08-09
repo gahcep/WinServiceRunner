@@ -54,12 +54,10 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <Version>
-      </Version>
+      <Version>1.1</Version>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>XCOPY /E /V /I /F /R /Y $(ProjectDir)$(IntDir)$(TargetFileName) $(SolutionDir)\Bin\$(IntDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
