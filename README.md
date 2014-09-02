@@ -14,7 +14,12 @@ What the library **can not do** (the list of TODOs):
  * Work with service' dependencies
  * Work with service arguments
 
-**Project settings**
+**Projects**
+
+* **Native** - original implementation in C++.
+* **Managed/ServiceInstallerManaged** - wrapper in C#. Works through P/Invoke.
+
+**_Native_ project settings**
 
 * Preprocessor directive **LIBRARY_API**  
  
