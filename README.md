@@ -16,6 +16,8 @@ What the library **can not do** (the list of TODOs):
 
 **Projects**
 
+* **Services** - barebone windows services written in different languages:
+	* **CsharpService**
 * **Native** - original implementation in C++.
 * **Managed/ServiceInstallerManaged** - wrapper in C#. Works through P/Invoke.
 
