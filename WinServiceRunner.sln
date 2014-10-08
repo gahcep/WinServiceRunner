@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinSrvRunner", "Native\ServiceInstallerNative.vcxproj", "{FE154A79-888E-421E-B47A-4D6BDD11A047}"
 EndProject
@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSrvRunnerManaged", "Mana
 	ProjectSection(ProjectDependencies) = postProject
 		{FE154A79-888E-421E-B47A-4D6BDD11A047} = {FE154A79-888E-421E-B47A-4D6BDD11A047}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpService", "Services\CsharpService\CsharpService.csproj", "{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +42,16 @@ Global
 		{D0584703-B55D-4FF0-B16D-3338D6A30D19}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D0584703-B55D-4FF0-B16D-3338D6A30D19}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D0584703-B55D-4FF0-B16D-3338D6A30D19}.Release|Win32.ActiveCfg = Release|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FBCE934E-0A93-4684-BFB0-A1D7C901D6ED}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
